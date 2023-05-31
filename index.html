@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영진직업전문학교</title>
+    <!-- 캐러셀 step2) 제이쿼리 및 bxslider 라이브러리 및 css 삽입  -->
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+
+    <script>
+        $(document).ready(function () {
+            $(".slider").bxSlider({
+                slideWidth: 1800,
+                captions: true,
+                auto: true,
+                autoControls: true,
+                stopAutoOnclick: true,
+            });
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <header>
+        <div id="header_top">
+            <nav id="header_gnb">
+                <ul>
+                    <li><a href="#">학생관리</a></li>
+                    <li><a href="#">NCS평가</a></li>
+                    <li><a href="#">시험응시</a></li>
+                    <li><a href="#">정보수정</a></li>
+                    <li><a href="#">회원탈퇴</a></li>
+                    <li><a href="#">로그아웃</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="header_bottom">
+            <div class="wrapper">
+                <div id="toggle">
+                    <img src="" alt="토글">
+                </div>
+
+                <div id="logo">
+                    <img src="./images/yj_log.png" alt="영진직업전문학교로고" />
+                </div>
+                <nav id="header_lnb">
+                    <ul>
+                        <li><a href="#">모집과정</a></li>
+                        <li><a href="#">입학상담</a></li>
+                        <li><a href="#">과정소개</a></li>
+                        <li><a href="#">취업센터</a></li>
+                        <li><a href="#">커뮤니티</a></li>
+                        <li><a href="#">학교소개</a></li>
+                        <li><a href="#">회원소개</a></li>
+                    </ul>
+                </nav>
+                <div id="phone">
+                    <img src="./images/tel.png" alt="전화이미지" width="40px">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="contents">
+            <div id="mainimage_wrapper">
+                <!-- 캐러셀 step1) bxslider 구현을 위해  -->
+                <div class="slider">
+                    <div class="mainimage"><img src="./images/mainimage01.JPG" /></div>
+                    <div class="mainimage"><img src="./images/mainimage02.JPG" /></div>
+                    <div class="mainimage"><img src="./images/mainimage03.JPG" /></div>
+                    <div class="mainimage"><img src="./images/mainimage04.JPG" /></div>
+                    <div class="mainimage"><img src="./images/mainimage05.JPG" /></div>
+                </div>
+            </div>
+
+            <div id="class_wrapper">
+                <div class="wrapper" id="class_tab">
+                    <input id="class_1" type="radio" name="class_tap" checked="checked">
+                    <input id="class_2" type="radio" name="class_tap">
+                    <input id="class_3" type="radio" name="class_tap">
+                    <input id="class_4" type="radio" name="class_tap">
+                    <input id="class_5" type="radio" name="class_tap">
+                    <input id="class_6" type="radio" name="class_tap">
+                    <section class="class_buttons">
+                        <label for="class_1">전체과정</label>
+                        <label for="class_2">IT/SW</label>
+                        <label for="class_3">전기PLC</label>
+                        <label for="class_4">기계설계</label>
+                        <label for="class_5">디자인</label>
+                        <label for="class_6">용접</label>
+                    </section>
+                    <div class="class_tab_item">
+                        <img src="./images/class_tab_item01.png" alt="" />
+                        <img src="./images/class_tab_item02.png" alt="" />
+                        <img src="./images/class_tab_item03.png" alt="" />
+                        <img src="./images/class_tab_item04.png" alt="" />
+                    </div>
+                    <div class="class_tab_item">IT/SW 탭 내용</div>
+                    <div class="class_tab_item">전기PLC 탭 내용</div>
+                    <div class="class_tab_item">기계설계 탭 내용</div>
+                    <div class="class_tab_item">디자인 탭 내용</div>
+                    <div class="class_tab_item">용접 탭 내용</div>
+                </div>
+            </div>
+            <div id="edu_wrapper">
+                <div class="wrapper" id="edu_tab">
+                    <input id="edu_1" type="radio" name="class_tap" />
+                    <input id="edu_2" type="radio" name="class_tap" />
+                    <section class="edu_buttons">
+                        <label for="edu_1">구직자를 위한 교육</label>
+                        <label for="edu_2">직장인을 위한 교육</label>
+                    </section>
+                    <div class="edu_item"><img src="./images/edu_tab_item01.png" alt="" /></div>
+                    <div class="edu_item"><img src="./images/edu_tab_item02.png" alt="" /></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer_wrapper">푸터</div>
+    </footer>
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>

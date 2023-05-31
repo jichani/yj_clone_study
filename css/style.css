@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 공통 부분 */
+.wrapper {
+    max-width: 1200px;
+    border: 1px solid green;
+    margin: 0 auto;
+}
+
+/* 헤더부분 */
+header {
+    background-color: #ddd;
+}
+
+header #header_top {
+    border: 1px solid black;
+}
+
+header #header_top nav ul {
+    border: 1px solid black;
+    text-align: right;
+    padding-right: 7%;
+
+}
+
+header #header_top nav ul li {
+    padding: 4px 11px;
+
+}
+
+header #header_top nav ul li a {
+    color: gray;
+    font-size: 11pt;
+}
+
+header #header_bottom {
+    border: 1px solid black;
+    padding-top: 20px;
+}
+
+header #header_bottom .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+header #header_bottom #logo {
+    border: 1px solid black;
+}
+
+header #header_bottom #header_lnb {
+    border: 1px solid black;
+}
+
+header #header_bottom #header_lnb ul li {
+    padding: 10px 30px;
+
+}
+
+header #header_bottom #header_lnb ul li a {
+    color: #111;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+header #header_bottom #toggle {
+    display: none;
+}
+
+header #header_bottom #phone {
+    display: none;
+}
+
+
+
+header #header_bottom .wrapper {
+    display: flex;
+}
+
+
+
+/* 컨텐츠 부분 */
+main {
+    background-color: #aaa;
+}
+
+main #mainimage_wrapper {
+    border: 1px solid red;
+    background-color: navy;
+}
+
+main #class_wrapper {
+    border: 1px solid red;
+    background-color: gray;
+}
+
+main #edu_wrapper {
+    border: 1px solid red;
+    background-color: white;
+}
+
+/* 푸터 부분 */
+footer {
+    background-color: #555;
+}
