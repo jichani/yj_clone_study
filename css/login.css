@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* 공통 부분 */
+body {
+    background: #333;
+}
+
+.wrapper {
+    max-width: 1200px;
+    /* border: 1px solid green; */
+    margin: 0 auto;
+}
+
+label {
+    cursor: pointer;
+}
+
+/* 헤더부분 */
+header {
+    background-color: #fff;
+    width: 100vw;
+    height: 104px;
+
+    border-bottom: 1px solid #ccc;
+
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+/* header #header_top {
+    border: 1px solid black;
+} */
+
+header #header_top nav ul {
+    /* border: 1px solid black; */
+    text-align: right;
+    padding-right: 7%;
+
+}
+
+header #header_top nav ul li {
+    padding: 4px 11px;
+
+}
+
+header #header_top nav ul li a {
+    color: gray;
+    font-size: 11pt;
+}
+
+header #header_bottom {
+    /* border: 1px solid black; */
+    padding-top: 20px;
+}
+
+header #header_bottom .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* header #header_bottom #logo {
+    border: 1px solid black;
+} */
+
+/* header #header_bottom #header_lnb {
+    border: 1px solid black;
+} */
+
+header #header_bottom #header_lnb ul li {
+    padding: 10px 30px;
+
+}
+
+header #header_bottom #header_lnb ul li a {
+    color: #111;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+header #header_bottom #toggle {
+    display: none;
+}
+
+header #header_bottom #phone {
+    display: none;
+}
+
+header #header_bottom .wrapper {
+    display: flex;
+}
+
+/* 메인 부분 */
+main {
+    width: 100vw;
+    background: #fff;
+}
+
+#j-container {
+    clear: both;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+#j-contents {
+    clear: both;
+    width: 1200px;
+    margin: 0;
+    padding: 0;
+    word-break: break-all;
+    word-wrap: break-word;
+    font-size: 11pt;
+}
+
+#j-tbar {
+    position: relative;
+    margin: 0 0 40px 0;
+    padding: 0;
+    border-bottom: 0px solid #ccc;
+}
+
+#json-login {
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    padding: 18px 28px 0 28px;
+    margin: 0 auto;
+    border: 2px solid #111;
+    line-height: normal;
+    background: #fff;
+    white-space: normal;
+    color: #767676;
+
+    border: 2px solid #aaa !important;
+}
+
+#j-tbar h1 {
+    margin: 0;
+    padding: 0px 0 40px;
+    font-size: 1.875em;
+    line-height: 1.1em;
+    font-weight: 700;
+    color: #111;
+    text-align: center;
+}
+
+.blind {
+    position: absolute;
+    clear: none;
+    font-size: 0;
+    top: -1000em;
+    _top: -9999px;
+    left: -1000em em;
+    _left: -9999px;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 0 !important;
+    border: none !important;
+}
+
+#j-tbar dl dt,
+#j-tbar dl dd {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    line-height: 1em;
+}
+
+.ej-login-label {
+    display: block;
+    position: static;
+    top: 9px;
+    padding: 3px 0;
+    font-size: 0.86em;
+}
+
+#json-login .json-ej-login .ej-login-txt {
+    width: 100%;
+    max-width: 316px;
+    height: 26px;
+    padding: 8px 0 6px 10px;
+    margin: 0 0 5px 0;
+    font-size: 0.86em;
+}
+
+#json-login .json-ej-login .ej-login-save {
+    float: none;
+    padding: 0;
+}
+
+fieldset {
+    border: none;
+}
+
+.ej-login-save label {
+    position: static;
+    cursor: pointer;
+    font-size: 0.86em;
+    margin-left: 5px;
+}
+
+#login_btn {
+    text-align: right;
+    margin-top: -5px;
+}
+
+#login_btn button {
+    padding: 3px 30px;
+    background: #666;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+
+    position: relative;
+    bottom: -5px;
+    font-size: 15px;
+}
+
+.ej-login-txt {
+    position: relative;
+    display: block;
+    height: 14px;
+    color: #767676;
+    border: 1px solid #b7b7b7;
+    border-right-color: #e1e1e1;
+    border-bottom-color: #e1e1e1;
+    background: transparent;
+}
+
+.ej-login-menu {
+    position: relative;
+    float: none;
+    display: block;
+    border: 0;
+    border-top: 1px solid #d9d9d9;
+    background: #fafafa;
+    padding: 10px 0;
+    margin: 0 -28px;
+    list-style: none;
+    text-align: center;
+    *zoom: 1;
+}
+
+.ej-login-menu li.first {
+    border: 0 !important;
+}
+
+.ej-login-menu li {
+    display: inline;
+    float: none;
+    border-left: 1px solid #c3c3c3 !important;
+    padding: 0 6px 0 10px;
+    margin: 0;
+    line-height: 1;
+}
+
+.ej-login-menu a {
+    float: none;
+    display: inline;
+    background: none;
+    font-size: 0.86em;
+    line-height: 1;
+    padding: 0;
+    color: #767676;
+    text-decoration: none;
+}
+
+.social_Login {
+    text-align: center;
+}
+
+/* 푸터 부분 */
+#footer_wrapper {
+    max-width: 1200px;
+    /* border: 1px solid green; */
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #333;
+    margin-top: 30px;
+    padding: 10px 0 20px;
+}
+
+footer ul li a img {
+    width: 30px;
+    height: 30px;
+}
+
+footer #footer_main_text {
+    border-bottom: 1px dotted #666;
+}
+
+footer .footer_side_text {
+    display: block;
+
+    font-size: 12.8px;
+    color: #aaa;
+
+    margin: 5px;
+    padding: 15px 10px;
+}
+
+footer #footer_main_text span {
+    font-size: 14.6px;
+    margin: 0;
+    color: #eee;
+    padding: 10px 5px 10px 0 !important;
+    display: inline-block;
+}
+
+footer #footer_wrapper div,
+footer #footer_wrapper ul {
+    padding: 0 10px;
+
+}
+
+footer #footer_line {
+    width: 2px;
+    height: 80%;
+
+}

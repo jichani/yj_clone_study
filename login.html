@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ㅏㅐ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 페이지</title>
+    <script type="text/javascript" src="https://static.nid.naver.com/js/naverLogin_implicit-1.0.3.js"
+        charset="utf-8"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+    <header>
+        <div id="header_top">
+            <nav id="header_gnb">
+                <ul>
+                    <li><a href="#">학생관리</a></li>
+                    <li><a href="#">NCS평가</a></li>
+                    <li><a href="#">시험응시</a></li>
+                    <li><a href="#">정보수정</a></li>
+                    <li><a href="#">회원탈퇴</a></li>
+                    <li><a href="./login.html" style="color:#0d5fb6">로그인</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="header_bottom">
+            <div class="wrapper">
+                <div id="toggle">
+                    <img src="" alt="토글">
+                </div>
+
+                <div id="logo">
+                    <a href="./index.html"><img src="./images/yj_log.png" alt="영진직업전문학교로고" style="padding-top: 4px"></a>
+                </div>
+                <nav id="header_lnb">
+                    <ul>
+                        <li><a href="#">모집과정</a></li>
+                        <li><a href="#">입학상담</a></li>
+                        <li><a href="#">과정소개</a></li>
+                        <li><a href="#">취업센터</a></li>
+                        <li><a href="#">커뮤니티</a></li>
+                        <li><a href="./school.html">학교소개</a></li>
+                    </ul>
+                </nav>
+                <div id="phone">
+                    <img src="./images/tel.png" alt="전화이미지" width="40px">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="j-container">
+            <div id="j-contents">
+                <div id="j-tbar">
+                    <h1><span>로그인</span></h1>
+                    <dl>
+                        <dt class="blind">로케이션</dt>
+                        <dd><a href="../" title="홈페이지">» Home</a> &gt; <a href="../p/?j=1"
+                                style="color: rgb(51, 102, 255);">로그인</a></dd>
+                    </dl>
+                </div>
+
+                <!-- S : login -->
+                <div id="json-login" class="json-ej-login json-login-ct">
+                    <form name="json_ej_login" id="json_ej_login" class="json-ej-login" method="post" action=""
+                        onsubmit="return ejJsonLoginChk();" autocomplete="off">
+                        <input type="hidden" name="ej_temp" id="json_ej_temp" value="">
+                        <input type="hidden" name="process" id="json_process" value="json_login">
+                        <input type="hidden" name="return_url" id="return_url" value="VmtWb2FrOVdRbEpRVkRBOStN">
+                        <fieldset>
+
+                            <div class="ej-login-item">
+                                <label for="json_ej_login_id" class="ej-login-label">아이디</label><input
+                                    name="ej_login_id" id="json_ej_login_id" placeholder="아이디" type="text" value=""
+                                    class="ej-login-txt" style="ime-mode:disabled;" autocomplete="off">
+                            </div>
+                            <div class="ej-login-item">
+                                <label for="json_ej_login_pw" class="ej-login-label">비밀번호</label><input
+                                    name="ej_login_pw" id="json_ej_login_pw" placeholder="비밀번호" type="password" value=""
+                                    class="ej-login-txt" style="ime-mode:disabled;" autocomplete="off">
+                            </div>
+                            <p class="ej-login-save"><input name="ej_login_save" id="ej_login_save" type="checkbox"
+                                    value="1" class="ej-login-save-chk"><label for="ej_login_save"
+                                    class="hand">자동로그인</label></p>
+                            <div id="login_btn">
+                                <button>로그인</button>
+                            </div>
+                            <ul class="ej-login-menu">
+                                <li class="first"><a href="../p/?j=2&amp;rPath=VmtWb2FrOVdRbEpRVkRBOStN">회원가입</a></li>
+                                <li><a href="../p/?j=3">아이디/비밀번호 찾기</a></li>
+                            </ul>
+                            <div class="social_Login">
+                                <a href="javascript:kakaoLogin();"><img src="./images/kakao_login.png"
+                                        width="200px" /></a>
+                                <!-- 네이버 로그인 버튼 노출 영역 -->
+                                <div id="naver_id_login"></div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div id="footer_wrapper">
+            <div id="footer_main_text">
+                <span>개인정보정책</span>
+                <span>메일주소무단수집거부</span>
+            </div>
+            <div class="footer_side_text">
+                <span>회사명 : 영진직업전문학교</span>
+                <span>대표자 : 곽승호, 차영숙 <img src="http://www.yjjob.or.kr/_common/images/footer_email.png"
+                        alt="cha8877@hanmail.net"></span>
+                <span>Tel : 053-983-8877</span>
+                <span>Fax : 053-722-2423</span>
+                <span>개인정보보호책임자 : 이동석 <img src="http://www.yjjob.or.kr/_common/images/footer_email.png"
+                        alt="cha8877@hanmail.net"></span>
+                <span>Tel : 053-983-8877</span>
+                <span>사업자번호 : 502-95-07029</span>
+            </div>
+            <div class="footer_side_text">701-835 대구광역시 동구 화랑로 525(용계동), 조경실습장 : 대구 동구 도동 806-21</div>
+            <div class="footer_side_text">copyright © 대구국비지원 무료교육센터 영진직업전문학교. All Rights Reserved.</div>
+            <ul>
+                <li><a href="https://www.facebook.com/yjjob/" target="_blank" title="facebook"><img
+                            src="http://www.yjjob.or.kr/data/banner/wzVEfAWEyQqQwSSDtBVB_1582087115.png"
+                            alt="facebook"></a></li>
+                <li><a href="http://pf.kakao.com/_bItTxd" target="_blank" title="talk"><img
+                            src="http://www.yjjob.or.kr/data/banner/UDqigZGEW5doZh0KVkyK_1582087165.png" alt="talk"></a>
+                </li>
+                <li><a href="https://www.instagram.com/yjjob8877" target="_blank" title="인스타그램"><img
+                            src="http://www.yjjob.or.kr/data/banner/CL7glr7BqenPNRABVpf6_1603411157.png"
+                            alt="인스타그램"></a></li>
+                <li><a href="https://blog.naver.com/yjjob8877" target="_blank" title="blog"><img
+                            src="http://www.yjjob.or.kr/data/banner/i7YkK4s8jij9rqZyjvx8_1582100733.png" alt="blog"></a>
+                </li>
+                <li><a href="https://www.youtube.com/c/yjjob/videos" target="_blank" title="youtube"><img
+                            src="http://www.yjjob.or.kr/data/banner/ihbgXxfvw9YQsPHklVhA_1679361241.png"
+                            alt="youtube"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- 카카오 로그인 api -->
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script>
+        window.Kakao.init("ff5bd65f1dd9544b0cb4524cb8dbaee6"); // API Key 입력
+
+        function kakaoLogin() { // 함수 선언
+            window.Kakao.Auth.login({  // 카카오 연동 로그인을 위한 인증, 로그인 될 때 실행됨
+                scope: 'profile_nickname, account_email, gender', // 가져올 카카오 로그인 정보 중 동의항목 ID 설정
+                success: function (authobj) {
+                    console.log(authobj);  // 받아온 오브젝트 데이터를 콘솔로 출력해보기
+                    window.Kakao.API.request({ // 로그인 된 상태에서 유저의 로그인 정보(이메일, 닉네임 등) 값을 요청해서 받아오기
+                        url: '/v2/user/me',  //로그인 한 사용자의 정보가 있는 url 지정
+                        success: res => {
+                            const kakao_account = res.kakao_account; // account 정보 가져오기
+                            console.log(kakao_account);
+                        }
+                    });
+                }
+            });
+        }
+    </script>
+
+    <!-- 네이버 로그인 api -->
+    <script type="text/javascript">
+        var naver_id_login = new naver_id_login("B0twsA2Tqy3r_6xfAiPY", "http://dlawlcks12.dothome.co.kr/callback.html");
+        var state = naver_id_login.getUniqState();
+        naver_id_login.setButton("white", 3, 43);
+        naver_id_login.setDomain("http://dlawlcks12.dothome.co.kr");
+        naver_id_login.setState(state);
+        naver_id_login.setPopup();
+        naver_id_login.init_naver_id_login();
+    </script>
+</body>
+
+</html>
